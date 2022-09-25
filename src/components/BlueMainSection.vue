@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <ul class="d-flex justify-content-center">
-      <li v-for="(item, index) in blueSectionArray" :key="index" class="d-flex justify-content-evenly m-4 align-items-center">
+      <li v-for="(item, index) in blueSectionArray" :key="index" class="d-flex justify-content-evenly p-4 align-items-center">
         <img :src="require(`../assets/imgBlue/${item.image}`)" :alt="item.text" class="img-fluid fl-blueicons">
         <p class="d-flex">{{ item.text }}</p>
       </li>
@@ -46,6 +46,8 @@ export default {
   section {
     background-color: #0c7cec;
     min-width: 100%;
+    z-index: 2;
+    position: relative;
 
     ul{
       list-style: none;
@@ -68,7 +70,7 @@ export default {
 
     .fl-blueicons {
       height: 70px;
-      margin: 10px;
+      margin: 0px 10px;
 
     }
 

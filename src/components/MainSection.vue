@@ -129,6 +129,7 @@ export default {
 
   main {
     background-color: #1c1c1c;
+    padding-top: 100px;
 
     p{
       color: white;
