@@ -1,13 +1,15 @@
 <template>
-  <header class="container d-flex justify-content-between">
-    <div class="d-flex p-3">
-      <img src="../assets/dc-logo.png" alt="dc-logo-header">
-    </div>
-    <ul class="d-flex justify-content-evenly align-self-center">
-      <li v-for="(item, index) in headerArray" :key="index">
-        {{ item.text }}
-      </li>
-    </ul>
+  <header class="d-flex">
+    <nav class="container d-flex justify-content-between">
+      <div class="d-flex p-3">
+        <img src="../assets/dc-logo.png" alt="dc-logo-header">
+      </div>
+      <ul class="d-flex justify-content-evenly align-self-center">
+        <li v-for="(item, index) in headerArray" :key="index">
+          {{ item.text }}
+        </li>
+      </ul>
+    </nav>
   </header>
 </template>
 
@@ -69,7 +71,11 @@ export default {
 <style lang="scss" scoped>
 
 header {
-  height: 120px;
+  background-color: white;
+  height: 100px;
+  min-width: 100%;
+  position: fixed;
+  z-index: 999;
 
   ul {
     list-style-type: none;
@@ -78,8 +84,9 @@ header {
 
   li {
     border-bottom: 5px solid transparent;
-    padding: 54px 0;
+    padding: 43px 0;
     font-weight: 500;
+    cursor: pointer;
 
     &:hover {
       border-bottom: 5px solid #0c7cec;
