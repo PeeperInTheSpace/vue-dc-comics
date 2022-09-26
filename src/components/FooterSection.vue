@@ -1,15 +1,36 @@
 <template>
   <footer>
     <section class="d-flex container">
-      <div>
+      <!-- DC COMICS LINKS -->
+      <div class="me-5 mt-3">
         <h3 class="mt-3 pb-2">DC COMICS</h3>
         <ul>
           <li v-for="(item, index) in dcComicsLinks" :key="index">
             <p>{{ item.text }}</p>
           </li>
         </ul>
+        <!-- SHOP LINKS -->
+        <h3 class="mt-3 pb-2">SHOP</h3>
         <ul>
-          <li v-for="(item, index) in dcComicsLinks" :key="index">
+          <li v-for="(item, index) in shopLinks" :key="index">
+            <p>{{ item.text }}</p>
+          </li>
+        </ul>
+      </div>
+      <!-- DC LINKS -->
+      <div  class="me-5 mt-3">
+        <h3 class="mt-3 pb-2">DC</h3>
+        <ul>
+          <li v-for="(item, index) in dcLinks" :key="index">
+            <p>{{ item.text }}</p>
+          </li>
+        </ul>
+      </div>
+      <!-- SITES LINKS -->
+      <div class="mt-3">
+        <h3 class="mt-3 pb-2">SITES</h3>
+        <ul>
+          <li v-for="(item, index) in sitesLinks" :key="index">
             <p>{{ item.text }}</p>
           </li>
         </ul>

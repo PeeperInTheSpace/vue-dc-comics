@@ -44,6 +44,7 @@ export default {
 <style lang="scss" scoped>
 
   section {
+    height: 120px;
     background-color: #0c7cec;
     min-width: 100%;
     z-index: 2;
